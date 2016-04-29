@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h3>Create a new creature</h3>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 well">
+      <%= form_for @creature do |f| %>
+
+        <div class="field">
+          <%= f.label :name %><br>
+          <%= f.text_field :name %>
+        </div>
+        <div class="field">
+          <%= f.label :description %><br>
+          <%= f.text_area :description %>
+        </div>
+        <br>
+        <div>
+          <%= f.submit "Save Creature" %>
+        </div>
+
+      <% end %>
+    </div>
+
+  </div>
+</div>
