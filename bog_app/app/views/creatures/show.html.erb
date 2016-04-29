@@ -5,7 +5,7 @@
       <h3><%= @creature.name %></h3>
        <p>Description: <%=  @creature.description %></p>
       <%= link_to "Edit", edit_creature_path(@creature) %> |
-      
+      <%= link_to "Delete", @creature, method: :delete %>
     </div>
 
   </div>
