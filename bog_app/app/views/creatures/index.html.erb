@@ -4,15 +4,19 @@
       <h2>Creatures!!!</h2
     </div>
   </div>
-  <% @creatures.each do |creature| %>
+
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
+      <% @creatures.each do |creature| %>
         <p>
           <strong>Name:</strong> <%= creature.name %><br>
           <strong>Description:</strong> <%= creature.description %>
         </p>
         <hr>
+        <% end %>
+        <%= link_to "Add New Creature", new_creature_path %>
     </div>
+
   </div>
-  <% end %>
+
 </div>
